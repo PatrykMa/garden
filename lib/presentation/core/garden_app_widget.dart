@@ -2,8 +2,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:garden/generated/locale_keys.g.dart';
+import 'package:garden/presentation/routes/app_router.gr.dart';
 
-import 'app_router.gr.dart';
+
 
 class GardenAppWidget extends StatelessWidget {
   final _appRouter = AppRouter();

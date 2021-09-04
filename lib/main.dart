@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:garden/generated/locale_keys.g.dart';
 import 'package:injectable/injectable.dart';
 
-import 'feature/core/garden_app_widget.dart';
+import 'presentation/core/garden_app_widget.dart';
 import 'injction.dart';
 //flutter pub run build_runner watch
 Future main() async {

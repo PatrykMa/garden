@@ -7,7 +7,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:garden/feature/core/garden_app_widget.dart';
+import '../lib/presentation/core/garden_app_widget.dart';
 
 import 'package:garden/main.dart';
 

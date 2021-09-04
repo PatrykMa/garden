@@ -1,7 +1,7 @@
 
 
 import 'package:auto_route/annotations.dart';
-import 'package:garden/feature/plant/presentation/screen/plant_list_screen.dart';
+import '../plant/oerwiew/plant_list_screen.dart';
 
 @MaterialAutoRouter(
   routes: <AutoRoute>[
