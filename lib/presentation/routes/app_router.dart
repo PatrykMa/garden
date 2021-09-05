@@ -1,11 +1,18 @@
 
 
-import 'package:auto_route/annotations.dart';
-import '../plant/oerwiew/plant_list_screen.dart';
+import 'package:flutter/material.dart';
+import 'package:garden/presentation/plant/oerwiew/plant_list_screen.dart';
 
-@MaterialAutoRouter(
-  routes: <AutoRoute>[
-    AutoRoute(page: PlantListScreen, initial: true),
-  ],
-)
-class $AppRouter{}
+Route<dynamic> generateRoute(RouteSettings settings) {
+  switch (settings.name) {
+    case Routes.plant: return MaterialPageRoute(builder: (context) => PlantListScreen());
+    case Routes.editPlant: return MaterialPageRoute(builder: (context) => PlantListScreen());
+    default: throw Exception("not supported route");
+  }
+
+}
+
+class Routes{
+  static const String plant = "/plant";
+  static const String editPlant = "$plant/edit";
+}
