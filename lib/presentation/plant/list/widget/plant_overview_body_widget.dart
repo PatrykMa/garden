@@ -11,7 +11,7 @@ class PlantsOverviewBody extends StatelessWidget {
     return BlocBuilder<PlantListBloc, PlantListState>(
       builder: (context, state) {
         return state.map(
-          initial: (_) => Container(),
+          initial: (_) => const CircularProgressIndicator(),
           loadInProgress: (_) => const Center(
             child: CircularProgressIndicator(),
           ),
