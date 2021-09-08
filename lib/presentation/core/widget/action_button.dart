@@ -12,6 +12,7 @@ class ActionButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(
+      style: ElevatedButton.styleFrom(primary: Colors.green),
       onPressed: onPressed,
       child: Text(text),
     );
