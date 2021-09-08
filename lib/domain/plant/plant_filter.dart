@@ -9,5 +9,7 @@ abstract class PlantFilter implements _$PlantFilter {
     required String nameContain,
   }) = _PlantFilter;
 
+  factory PlantFilter.empty() => PlantFilter(nameContain: "");
+
   const PlantFilter._();
 }
